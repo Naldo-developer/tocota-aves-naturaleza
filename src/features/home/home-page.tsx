@@ -1,0 +1,9 @@
+import { Introduction, Journey, Territory, Conservation, Closing } from "./sections";
+import Image from "next/image";
+import { Header } from "@/components/header";
+import { Icon } from "@/components/icon";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { home } from "@/content/home";
+export function HomePage() { return <><a className="skip-link" href="#contenido">Saltar al contenido</a><Header/><main id="contenido"><section className="hero" id="inicio" aria-labelledby="hero-title"><Image src="/images/bosque-tocota.webp" alt="Ilustración de un paisaje de montañas y bosque con un ave entre la vegetación" fill priority sizes="100vw" className="hero-image"/><div className="hero-shade"/><div className="hero-content"><p className="eyebrow"><span/> TOCOTÁ, DAGUA · VALLE DEL CAUCA</p><p className="hero-kicker">Tocotá Aves y Naturaleza</p><h1 id="hero-title">Descubre,<br/>observa y <em>conserva.</em></h1><p className="hero-description">{home.introduction}</p><a className="button" href="#recorrido">Conoce el recorrido <Icon/></a></div><div className="hero-bottom"><span>AVITURISMO CON PROPÓSITO</span><span className="image-note">Paisaje ilustrativo del proyecto</span><a href="#recorrido" aria-label="Bajar al recorrido">SIGUE EL CANTO <span aria-hidden="true">↓</span></a></div></section>
+<Introduction/><Journey/><Territory/><Conservation/><Closing/></main><footer><a className="brand" href="#inicio"><Icon name="bird"/><span>TOCOTÁ<small>AVES Y NATURALEZA</small></span></a><p>Descubre, observa y conserva.<br/><small>Tocotá, Dagua · Valle del Cauca, Colombia</small></p><a href="#inicio">Volver al inicio ↑</a></footer><ScrollReveal/></>; }
+git add .
